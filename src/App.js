@@ -1,9 +1,11 @@
 import React from "react";
 
+//Import Pages
+import HomePage from './pages/HomePage'
 function App() {
   return (
     <div className="App">
-      <h1>Odizee</h1>
+      <HomePage />
     </div>
   );
 }
