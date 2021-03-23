@@ -119,6 +119,8 @@ const StyledNav = styled.nav`
     a.active{
             color: #F2F2F2;
             opacity: .7;
+            z-index: 100;
+
             
         }
 
@@ -132,6 +134,7 @@ const StyledNav = styled.nav`
             padding: 2.5rem;
             width: 100%;
             text-align: center;
+            margin-bottom: 5rem;
         }
 
 
@@ -169,10 +172,11 @@ const StyledNav = styled.nav`
             flex-direction: column;
             width: 100%;
             height: 100vh;
-            border-top: 1px solid #00B2FF;
+            font-size: 3.8rem;
+            border-top: 1px solid #FFF;
             position: absolute;
             top: 80px;
-            left: -110%;
+            left: 110%;
             opacity: 1;
             z-index: 1;
             /* justify-content: center; */
@@ -181,6 +185,7 @@ const StyledNav = styled.nav`
 
         @media screen and (max-width: 28.2em) {
             margin-top: -2rem;
+            padding-top: 5rem
 
         }
     }
