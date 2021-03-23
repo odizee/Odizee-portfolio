@@ -1,29 +1,36 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 //Images
 import leftarrow from '../img/leftarrow.png';
 import rightarrow from '../img/rightarrow.png';
 
+//F-A
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Nav = () => {
+    const [click, setclick] = useState(false);
+
+    const handleClick = () => setclick(!click)
     return( 
     <StyledNav>
         <h1><Link to="/" id="logo">Odizee</Link></h1>
-        <ul>
+        <ul className={click ? "nav-menu active" :  "nav-menu" }>
             <li>
-                <Link to="/work"><span>1.</span> Work</Link>
+                <NavLink activeclassName="active" to="/work" onClick={handleClick}><span>1.</span> Work</NavLink>
             </li>
             <li>
-                <Link to="/about"><span>2.</span> About</Link>
+                <NavLink activeclassName="active" to="/about" onClick={handleClick}><span>2.</span> About</NavLink>
             </li>
             <li>
-                <Link to="/contact"><span>3.</span> Contact</Link>
+                <NavLink activeclassName="active" to="/contact" onClick={handleClick}><span>3.</span> Contact</NavLink>
             </li>
         </ul>
-    </StyledNav>    
+        <div className="nav-icon" onClick={handleClick}><FontAwesomeIcon icon={click ? faTimes : faBars} /></div>
+    </StyledNav>
     )
 }
 
@@ -103,23 +110,107 @@ const StyledNav = styled.nav`
         color: white;
         text-decoration: none;
 
+
         span{
             color: #00B2FF;
         }
     }
 
+    a.active{
+            color: #F2F2F2;
+            opacity: .7;
+            
+        }
+
+
     li {
         position: relative;
         margin-right: 8.4rem;
+        color: #00B2FF;
+
+        @media screen and (max-width: 56.25em) {
+            padding: 2.5rem;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        :after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            position: absolute;
+            background: transparent;
+            transition: width 0.7s, background-color 0.5s ease;
+        }
+
+        :hover:after{
+            width: 110%;
+            background: #FFF;
+
+            @media screen and (max-width: 56.25em) {
+                width: 110%;
+            }
+        }   
     }
-    
-    ul {
+
+    .nav-menu {
         font-family: Courier New;
         font-size: 1.8rem;
         line-height: 170.7%;
         display: flex;
         align-items: center;
         list-style-type: none;
+
+
+        @media screen and (max-width: 56.25em) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            border-top: 1px solid #00B2FF;
+            position: absolute;
+            top: 80px;
+            left: -110%;
+            opacity: 1;
+            z-index: 1;
+            /* justify-content: center; */
+            align-content: center;
+        }
+
+        @media screen and (max-width: 28.2em) {
+            margin-top: -2rem;
+
+        }
+    }
+
+    .nav-menu.active {
+
+    @media screen and (max-width: 56.25em) {
+
+        background: #00B2FF;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        }
+    }
+
+    .nav-icon {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 80%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #00B2FF;
+
+        @media screen and (max-width: 56.25em) {
+            display: block;
+            font-size: 3.5rem;
+    }
     }
 `
 
