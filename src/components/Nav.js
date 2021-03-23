@@ -71,13 +71,13 @@ const StyledNav = styled.nav`
             background-repeat: no-repeat;
 
             @media screen and (max-width: 37.5em) {
-                left: 80%;
+                left: 90%;
                 top: 10%;
         }
 
         @media screen and (max-width: 28.2em) {
-                left: 90%;
-                top: 0%;
+                left: 100%;
+                top: -10%;
         }
             
         }
@@ -94,13 +94,13 @@ const StyledNav = styled.nav`
             background-repeat: no-repeat;
 
             @media screen and (max-width: 37.5em) {
-                left: -65%;
+                left: -70%;
                 top: 10%;
         }
 
         @media screen and (max-width: 28.2em) {
-                left: -70%;
-                top: 0%;
+                left: -80%;
+                top: -10%;
         }
             
         }
@@ -109,6 +109,7 @@ const StyledNav = styled.nav`
     a {
         color: white;
         text-decoration: none;
+        z-index: 100;
 
 
         span{
@@ -119,7 +120,6 @@ const StyledNav = styled.nav`
     a.active{
             color: #F2F2F2;
             opacity: .7;
-            z-index: 100;
 
             
         }

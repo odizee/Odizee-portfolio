@@ -221,7 +221,7 @@ const AboutMe = styled.div`
             border-radius: .4rem; 
             width: 37.2rem;
             height: 43.6rem;
-            z-index: 1;
+            /* z-index: 1; */
             background: #00B2FF;
             opacity: 0.1;   
         }
