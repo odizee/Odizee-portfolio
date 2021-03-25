@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background: #0D0D0D;
-        /* overflow: hidden; */
+        overflow-x: hidden;
         color: #F2F2F2;
         font-family: "DM Sans"
     }

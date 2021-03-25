@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 //Styled
 import styled from "styled-components";
+import HomeSpecific from "./HomeSpecific";
 
 //Image
 import git from '../img/Group 55.png';
@@ -44,6 +45,7 @@ const Contact = () => {
 
 //Styled Components
 const ConatctDiv = styled(motion.div)`
+    overflow: hidden;
     padding: 0 7.7rem;
 
     .heading{
