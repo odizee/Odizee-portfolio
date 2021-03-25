@@ -5,10 +5,13 @@ import styled from 'styled-components';
 import git from '../img/Group 55.png';
 import Odizeey from '../img/Odizeey.png';
 
+//Animations
+import {motion} from 'framer-motion';
+import {pageAnimation} from "../Animation";
 
 const About = () => {
     return (
-        <AboutMe>
+        <AboutMe exit="exit" variants={pageAnimation} initial="hidden" animate="show">
             <div className="heading">
                 <h1><span>02.</span> About Me</h1>  
                 <hr/>     
@@ -57,7 +60,7 @@ const About = () => {
     )
 }
 
-const AboutMe = styled.div`
+const AboutMe = styled(motion.div)`
     padding: 0 7.7rem;
     
     @media screen and (max-width: 37.5em) {

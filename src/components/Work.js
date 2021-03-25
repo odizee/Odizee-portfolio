@@ -8,9 +8,13 @@ import Rectangle48 from '../img/Rectangle48.png';
 // import Rectangle52 from '../img/Rectangle52.png';
 import git from '../img/Group 55.png';
 
+//Animations
+import {motion} from 'framer-motion';
+import {pageAnimation} from "../Animation";
+
 const Work = () => {
     return (
-        <Works>
+        <Works exit="exit" variants={pageAnimation} initial="hidden" animate="show">
             <div className="heading">
                 <h1><span>01.</span> Some things I've built</h1>  
                 <hr/>     
@@ -73,7 +77,7 @@ const Work = () => {
     )
 }
 
-const Works = styled.div`
+const Works = styled(motion.div)`
     padding: 0 7.7rem;
     
     @media screen and (max-width: 37.5em) {
@@ -129,7 +133,7 @@ const Works = styled.div`
     }
 `;
 
-const WorksList = styled.div`
+const WorksList = styled(motion.div)`
     padding: 5.1rem 11rem;
     /* display: flex; */
     /* align-items: center; */

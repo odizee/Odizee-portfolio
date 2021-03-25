@@ -10,9 +10,13 @@ import gmail from '../img/gmail.png';
 import linkedin from '../img/linkedin.png';
 import twitter from '../img/twitter.png';
 
+//Animations
+import {motion} from 'framer-motion';
+import {pageAnimation} from "../Animation";
+
 const Contact = () => {
     return (
-        <ConatctDiv>
+        <ConatctDiv exit="exit" variants={pageAnimation} initial="hidden" animate="show">
             <div className="heading">
                 <h1><span>02.</span> Get In Touch</h1>  
                 <hr/>     
@@ -39,7 +43,7 @@ const Contact = () => {
 };
 
 //Styled Components
-const ConatctDiv = styled.div`
+const ConatctDiv = styled(motion.div)`
     padding: 0 7.7rem;
 
     .heading{

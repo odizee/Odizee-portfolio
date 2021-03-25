@@ -2,7 +2,7 @@ import React from 'react';
 //Styled
 import styled from "styled-components";
 import HomeSpecific from "./HomeSpecific";
-
+import { motion } from "framer-motion"
 
 
 const Home = () => {
@@ -36,10 +36,10 @@ const Home = () => {
                     </div>
                 </Title>
                 <p>I’m a solutions driven web developer. Although highly experienced in developing Wordpress websites, I specialize in building interactive and functional interfaces across platforms.</p>
-                <div className="button-container">
+                <motion.div className="button-container" whileHover={{ scale: 1.04 }} whileTap={{ scale: 1 }}>
                     <button>Get In Touch</button>
                     <button className="button-two"></button>
-                </div>
+                </motion.div>
                 <div className="email">
                     <p className="email-p">odizeeplatform@gmail.com</p>
                 </div>
@@ -188,7 +188,6 @@ const HomeDiv = styled.div`
         font-weight: bold;
         font-size: 1.8rem;
         line-height: 170.7%;
-        /* or 31px */
         align-items: center;
 
         color: #00B2FF;
@@ -203,7 +202,8 @@ const HomeDiv = styled.div`
         border: .1rem solid #00B2FF;
         box-sizing: border-box;
         border-radius: .4rem;
-        padding: 0 8.5rem
+        padding: 0 8.5rem;
+        z-index: -10
     }
 
     .email{
