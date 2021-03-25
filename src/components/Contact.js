@@ -48,15 +48,19 @@ const ConatctDiv = styled(motion.div)`
     overflow: hidden;
     padding: 0 7.7rem;
 
+    @media screen and (max-width: 37.5em) {
+        padding: 0 3rem;
+    }
+
     .heading{
         display: flex;
         position: relative;
         font-size: 2.4rem;
         display: flex;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
 
         @media screen and (max-width: 28.2em) {
-            font-size: 2rem;
+            /* font-size: 2rem; */
     }
 
 
@@ -88,7 +92,7 @@ const ConatctDiv = styled(motion.div)`
 
     .container-1{
         display: flex;
-        padding-top: 10rem;
+        padding-top: 8rem;
         p{
             width: 68.9rem;
             font-style: normal;

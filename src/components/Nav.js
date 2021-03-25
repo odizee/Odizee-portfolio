@@ -176,7 +176,7 @@ const StyledNav = styled.nav`
             border-top: 1px solid #FFF;
             position: absolute;
             top: 80px;
-            left: 110%;
+            left: -110%;
             opacity: 1;
             z-index: 1;
             /* justify-content: center; */
@@ -208,13 +208,17 @@ const StyledNav = styled.nav`
         top: 0;
         right: 0;
         transform: translate(-100%, 80%);
-        font-size: 1.8rem;
+        font-size: 3rem;
         cursor: pointer;
         color: #00B2FF;
 
         @media screen and (max-width: 56.25em) {
             display: block;
-            font-size: 3.5rem;
+            font-size: 4rem;
+            position: relative;
+            top: -4rem;
+            left: 4rem;
+
     }
     }
 `

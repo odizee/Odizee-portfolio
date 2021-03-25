@@ -136,13 +136,13 @@ const HomeDiv = styled.div`
     @media screen and (max-width: 56.25em) {
         display: flex;
         min-height: 90vh;
-        padding: 10rem 5rem 0 5rem;
+        padding: 5rem 5rem 0 5rem;
         position: relative;
         /* overflow: hidden; */
         }
 
         @media screen and (max-width: 28.2em) {
-            padding: 10rem 3rem 0 3rem;
+            padding: 3rem 3rem 0 3rem;
     }
 
     .description{
@@ -191,6 +191,10 @@ const HomeDiv = styled.div`
         align-items: center;
 
         color: #00B2FF;
+
+        &:hover{
+            color: #fff;
+        }
     }
 
     .button-two{
@@ -203,7 +207,11 @@ const HomeDiv = styled.div`
         box-sizing: border-box;
         border-radius: .4rem;
         padding: 0 8.5rem;
-        z-index: -10
+        z-index: -10;
+
+        &:hover{
+            background-color: transparent;
+        }
     }
 
     .email{
