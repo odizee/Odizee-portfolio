@@ -63,6 +63,7 @@ const About = () => {
 const AboutMe = styled(motion.div)`
     padding: 0 7.7rem;
     height: 20%;
+    overflow: hidden;
     
     @media screen and (max-width: 37.5em) {
         padding: 0 4rem;

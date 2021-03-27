@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
         transition: all 0.5s ease;
         outline-style: none;
         &:hover{
-            background-color: #23d997;
+            background-color: #00B2FF;
             color: #fff;
         }
     }
