@@ -256,12 +256,17 @@ const StyledNav = styled.nav`
     .wrapper-menu {
             width: 4rem;
             height: 4rem;
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-between;
             cursor: pointer;
             transition: transform 330ms ease-out;
             z-index: 10;
+
+            @media screen and (max-width: 56.25em) {
+                display: flex;
+            }
+
             }
 
             .wrapper-menu.open {
