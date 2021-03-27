@@ -26,24 +26,33 @@ const Nav = () => {
     <StyledNav>
         <h1><Link to="/" id="logo">Odizee</Link></h1>
         <ul className={click ? "nav-menu active" :  "nav-menu " }>
-            <li onClick={handleToggle}>
-                <NavLink activeclassName="active" to="/work" onClick={handleClick}><span>1.</span> Work</NavLink>
+            <li>
+                <NavLink activeclassname="active" to="/work" onClick={() => {
+          handleToggle();
+          handleClick();
+        }}><span>1.</span> Work</NavLink>
             </li>
-            <li onClick={handleToggle}> 
-                <NavLink activeclassName="active" to="/about" onClick={handleClick}><span>2.</span> About</NavLink>
+            <li> 
+                <NavLink activeclassname="active" to="/about" onClick={() => {
+          handleToggle();
+          handleClick();
+        }}><span>2.</span> About</NavLink>
             </li>
-            <li onClick={handleToggle}> 
-                <NavLink activeclassName="active" to="/contact" onClick={handleClick}><span>3.</span> Contact</NavLink>
+            <li> 
+                <NavLink activeclassname="active" to="/contact" onClick={() => {
+          handleToggle();
+          handleClick();
+        }}><span>3.</span> Contact</NavLink>
             </li>
         </ul>
-        <div className="wrapper-menu nav-icon" onClick={handleClick}>
+        <div className="wrapper-menu nav-icon" onClick={handleToggle}>
             {/* <FontAwesomeIcon icon={click ? faTimes : faBars} /> */}
-            <div className={isActive ? "wrapper-menu" : "wrapper-menu open"} onClick={handleToggle}>
-                <div class="line-menu half start" style={{        backgroundColor: click ? '#FFF' : '#00B2FF'
+            <div className={isActive ? "wrapper-menu" : "wrapper-menu open"}  onClick={handleClick}>
+                <div className="line-menu half start" style={{        backgroundColor: click ? '#FFF' : '#00B2FF'
 }}></div>
-                <div class="line-menu" style={{        backgroundColor: click ? '#FFF' : '#00B2FF'
+                <div className="line-menu" style={{        backgroundColor: click ? '#FFF' : '#00B2FF'
 }}></div>
-                <div class="line-menu half end" style={{        backgroundColor: click ? '#FFF' : '#00B2FF'
+                <div className="line-menu half end" style={{        backgroundColor: click ? '#FFF' : '#00B2FF'
 }}></div>
             </div>
             
@@ -142,17 +151,17 @@ const StyledNav = styled.nav`
             
         }
 
-
     li {
         position: relative;
         margin-right: 8.4rem;
         color: #00B2FF;
 
         @media screen and (max-width: 56.25em) {
-            padding: 2.5rem;
+            padding: 3rem;
             width: 100%;
             text-align: center;
             margin-bottom: 5rem;
+
         }
 
 
@@ -204,8 +213,8 @@ const StyledNav = styled.nav`
         }
 
         @media screen and (max-width: 28.2em) {
-            margin-top: -2rem;
-            padding-top: 5rem;
+            margin-top: 0rem;
+            padding-top: 9rem;
 
         }
     }
@@ -240,7 +249,6 @@ const StyledNav = styled.nav`
             position: relative;
             top: -3rem;
             left: 5rem;
-
     }
 
     }
