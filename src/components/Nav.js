@@ -68,7 +68,7 @@ const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8rem 0 11rem; 
+    padding: 0 3rem 0 11rem; 
     width: 100%;
 
     @media screen and (max-width: 37.5em) {
@@ -153,7 +153,7 @@ const StyledNav = styled.nav`
 
     li {
         position: relative;
-        margin-right: 8.4rem;
+        margin-left: 8.4rem;
         color: #00B2FF;
 
         @media screen and (max-width: 56.25em) {
@@ -161,7 +161,7 @@ const StyledNav = styled.nav`
             width: 100%;
             text-align: center;
             margin-bottom: 5rem;
-
+            margin-right: 16rem;
         }
 
 
@@ -209,12 +209,14 @@ const StyledNav = styled.nav`
             /* justify-content: center; */
             align-content: center;
             transition: all 0.5s ease-out;
+            padding-top: 10rem;
+
 
         }
 
         @media screen and (max-width: 28.2em) {
             margin-top: 0rem;
-            padding-top: 9rem;
+            padding-top: 15rem;
 
         }
     }

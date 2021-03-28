@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
 //Styled
 import styled from "styled-components";
 import HomeSpecific from "./HomeSpecific";
@@ -37,7 +39,7 @@ const Home = () => {
                 </Title>
                 <p>I’m a solutions driven web developer. Although highly experienced in developing Wordpress websites, I specialize in building interactive and functional interfaces across platforms.</p>
                 <motion.div className="button-container" whileHover={{ scale: 1.04 }} whileTap={{ scale: 1 }}>
-                    <button>Get In Touch</button>
+                    <Link to="/work"> <button>View Projects </button></Link>
                     <button className="button-two"></button>
                 </motion.div>
                 <div className="email">
@@ -199,9 +201,9 @@ const HomeDiv = styled.div`
 
     .button-two{
         position: absolute;
-        left: .7rem;
+        left: 1rem;
         bottom: -.8rem;
-        width: 20.rem;
+        width: 18.1rem;
         height: 6rem;
         border: .1rem solid #00B2FF;
         box-sizing: border-box;
@@ -353,7 +355,7 @@ const Title = styled.div`
                 font-family: DM Sans;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 6.4rem;
+                font-size: 4.5rem;
                 line-height: 7rem;
                 letter-spacing: 0.04em;
 

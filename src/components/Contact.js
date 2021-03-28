@@ -46,7 +46,7 @@ const Contact = () => {
 //Styled Components
 const ConatctDiv = styled(motion.div)`
     overflow: hidden;
-    padding: 0 7.7rem;
+    padding: 3.5rem 7.7rem 0 7.7rem;
 
     @media screen and (max-width: 37.5em) {
         padding: 0 3rem;

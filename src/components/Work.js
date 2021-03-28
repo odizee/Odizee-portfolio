@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 //Images
-import Rectangle48 from '../img/Rectangle48.png';
+import _3k3 from '../img/3k3.png';
+import Reimagine from '../img/reimagine.png';
+import babyivy from '../img/baby-ivy.png';
+import bbros from '../img/bbros.png';
+
 // import Rectangle50 from '../img/Rectangle50.png';
 // import Rectangle51 from '../img/Rectangle51.png';
 // import Rectangle52 from '../img/Rectangle52.png';
@@ -21,55 +25,56 @@ const Work = () => {
             </div> 
             <WorksList>
                 <div className="worklist-1">
-                    <img src={Rectangle48} alt="first" className="work-image"/>
+                    <img src={_3k3} alt="first" className="work-image"/>
                     <div className="details">
-                        <h2>3k3 Consulting</h2>
+                        <h2><a href="https://3k3online.com/">3k3 Consulting</a></h2>
                         <div className="tech">
-                            <p>UI/UX</p>
-                            <p>Redesign</p>
+                            <p>Wordpress</p>
+                            <p>Elementor</p>
                             <p>UI/UX</p>
                             <img src={git} alt="" className="git-image"/>
                         </div>
-                            <p className="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <p className="work-p">3k3 is a business consulting firm. The website was built using Wordpress, Elementor, and custom CSS</p>
                     </div>
                 </div>             
                 <div className="worklist-2">
-                    <img src={Rectangle48} alt="first" className="work-image"/>
+                    <img src={Reimagine} alt="first" className="work-image"/>
                     <div className="details">
-                        <h2>Reimagine OD</h2>
+                        <h2><a href="https://reimagineod.org/">Reimagine OD</a></h2>
                         <div className="tech">
-                            <p>UI/UX</p>
-                            <p>Redesign</p>
+                            <p>WordPress</p>
+                            <p>Elementor</p>
                             <p>UI/UX</p>
                             <img src={git} alt="" className="git-image"/>
                         </div>
-                            <p className="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <p className="work-p">ReimagineOD is a business consulting firm. The website was built using Wordpress, Elementor, and custom CSS</p>
                     </div>
                 </div>             
                 <div className="worklist-3">
-                    <img src={Rectangle48} alt="first" className="work-image"/>
+                    <img src={babyivy} alt="first" className="work-image"/>
                     <div className="details">
-                        <h2>Baby Ivy League</h2>
+                        <h2><a href="https://babyivyleague.com/download/">Baby Ivy League</a></h2>
                         <div className="tech">
-                            <p>UI/UX</p>
-                            <p>Redesign</p>
-                            <p>UI/UX</p>
+                            <p>WordPress</p>
+                            <p>Elementor</p>
+                            <p>ConvertKit</p>
                             <img src={git} alt="" className="git-image"/>
                         </div>
-                            <p className="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <p className="work-p">Baby Ivy Leagues is a child care organisation. This landing page was designed using Wordpress, Elementor, and custom CSS. Auto subscription was done using Convertkit</p>
                     </div>
                 </div>             
                 <div className="worklist-4">
-                    <img src={Rectangle48} alt="first" className="work-image"/>
+                    <img src={bbros} alt="first" className="work-image"/>
                     <div className="details">
-                        <h2>Bbros Capital</h2>
+                        <h2><a href="http://bbroscapital.com/">Bbros Capital</a></h2>
                         <div className="tech">
-                            <p>UI/UX</p>
-                            <p>Redesign</p>
-                            <p>UI/UX</p>
+                            <p>WordPress</p>
+                            <p>Elementor</p>
+                            <p>CSS</p>
                             <img src={git} alt="" className="git-image"/>
                         </div>
-                            <p className="work-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <p className="work-p">Bbros Capital is a global strategic management and
+                            development consultancy. The website was built using Wordpress, Elementor, and custom CSS</p>
                     </div>
                 </div>                    
             </WorksList>  
@@ -78,7 +83,7 @@ const Work = () => {
 }
 
 const Works = styled(motion.div)`
-    padding: 0 7.7rem;
+    padding: 3.5rem 7.7rem 0 7.7rem;
     
     @media screen and (max-width: 37.5em) {
         padding: 0 3rem;
@@ -167,7 +172,7 @@ const WorksList = styled(motion.div)`
 
         .details {
             left: 6rem;
-            padding: 1.5rem 6.9rem 2rem 3rem;
+            padding: 1.5rem 6.9rem 8.5rem 3rem;
 
             @media screen and (max-width: 56.25em) {
                 left: 0rem;
@@ -190,6 +195,7 @@ const WorksList = styled(motion.div)`
         width: 63.2rem;
         height: 41.6rem;
         object-fit: cover;
+        border-radius: 1rem;
 
         @media screen and (max-width: 80em) {
             width: 60rem;
@@ -217,8 +223,13 @@ const WorksList = styled(motion.div)`
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         border-radius: 4px;
-        padding: 1.5rem .5rem 2rem 6.9rem;
+        padding: 1.5rem .5rem 8rem 6.9rem;
         left: -4rem;
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
 
         @media screen and (max-width: 56.25em) {
                 left: 0rem;
@@ -229,13 +240,13 @@ const WorksList = styled(motion.div)`
 
         @media screen and (max-width: 37.5em) {
                 width: 55rem;
-                padding: 1.5rem .5rem 2rem 3rem;
+                padding: 1.5rem .5rem 10rem 3rem;
 
             }
         
         @media screen and (max-width: 28.2em) {
                 width: 45rem;
-                padding: 1.5rem .5rem 2rem 3rem;
+                padding: 1.5rem .5rem 8rem 3rem;
         }
         
         h2{
