@@ -179,7 +179,7 @@ const AboutMe = styled(motion.div)`
             margin-right: 10rem;
 
             @media screen and (max-width: 80em) {
-                margin-right: 10rem
+                margin-right: 10rem;
             }
 
         }
@@ -203,7 +203,7 @@ const AboutMe = styled(motion.div)`
             }
 
             @media screen and (max-width: 28.2em) {
-                width: 45rem
+                width: 40rem
             }
         }
 
@@ -257,7 +257,7 @@ const AboutMe = styled(motion.div)`
             line-height: 170.7%;
 
             @media screen and (max-width: 28.2em) {
-                width: 45rem
+                width: 40rem
             }
         }
         &__row-1, &__row-2{
