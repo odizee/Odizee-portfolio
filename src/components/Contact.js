@@ -31,7 +31,7 @@ const Contact = () => {
                 <div>
                     <Link to="https://github.com/odizee"><img src={git} alt=""/></Link>
                     <a href="mailto:odizeeplatform@gmail.com"><img src={gmail} alt=""/></a>
-                    <a href="https://linkedin.com"><img src={linkedin} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/odiri-ighogboja-a187b5158/"><img src={linkedin} alt=""/></a>
                     <a href="https://twitter.com/ighotrix"><img src={twitter} alt=""/></a>
                 </div>
             </div>
