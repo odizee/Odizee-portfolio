@@ -29,10 +29,10 @@ const Contact = () => {
                 <p>You can also connect with me on social media.</p>
                 <hr/>
                 <div>
-                    <Link to="https://github.com/odizee"><img src={git} alt=""/></Link>
-                    <a href="mailto:odizeeplatform@gmail.com"><img src={gmail} alt=""/></a>
-                    <a href="https://www.linkedin.com/in/odiri-ighogboja-a187b5158/"><img src={linkedin} alt=""/></a>
-                    <a href="https://twitter.com/ighotrix"><img src={twitter} alt=""/></a>
+                    <a href="https://github.com/odizee" target="_blank" rel="noopener noreferrer"><img src={git} alt=""/></a>
+                    <a href="mailto: odizeeplatform@gmail.com"><img src={gmail} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/odiri-ighogboja-a187b5158/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt=""/></a>
+                    <a href="https://twitter.com/ighotrix" target="_blank" rel="noopener noreferrer"><img src={twitter} alt=""/></a>
                 </div>
             </div>
             <div className="container-3">
