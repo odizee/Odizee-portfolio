@@ -77,6 +77,19 @@ const Work = () => {
                             development consultancy. The website was built using Wordpress, Elementor, and custom CSS</p>
                     </div>
                 </div>                    
+                <div className="worklist-5">
+                    <img src="https://res.cloudinary.com/odizee/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1638859915/screencapture-football-squad-web-app-2021-12-06-19_43_11_iw7ae6.png" alt="football-squad" className="work-image"/>
+                    <div className="details">
+                        <h2><a href="https://football-squad.web.app/">Football Squad</a></h2>
+                        <div className="tech">
+                            <p>React</p>
+                            <p>Redux</p>
+                            <p>Styled Component</p>                            
+                            <a href="https://github.com/odizee/football-squad" target="_blank" rel="noopener noreferrer"><img src={git} alt="" className="git-image"/></a>
+                        </div>
+                            <p className="work-p">Football Squad is an app that shows the squad details of the top 5 football leagues in Europe. The website was built using React, Redux, and Styled Components for styling</p>
+                    </div>
+                </div>                    
             </WorksList>  
         </Works>
     )
@@ -255,6 +268,7 @@ const WorksList = styled(motion.div)`
         line-height: 3.5rem;
         letter-spacing: 0.02rem;
         margin-bottom: 2rem;
+        text-decoration: underline double #fff;
         }
 
         .work-p {

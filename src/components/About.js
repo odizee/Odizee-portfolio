@@ -48,7 +48,7 @@ const About = () => {
                     
                 </div>
                 <div className="AboutMe-Container__image">
-                        <img src={Odizeey} alt="" className="AboutMe-Container__image"/>
+                        <img src="https://res.cloudinary.com/odizee/image/upload/v1638860882/Odizee_Studio_jbwdqi.jpg" alt="" className="AboutMe-Container__image"/>
                 </div>
 
                 
